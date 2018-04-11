@@ -1,0 +1,8 @@
+D:\Users\alex.cdebaca\Documents\Fermio\portman\TradeCapture\bin\Debug\netstandard2.0\TradeCapture.deps.json
+D:\Users\alex.cdebaca\Documents\Fermio\portman\TradeCapture\bin\Debug\netstandard2.0\TradeCapture.dll
+D:\Users\alex.cdebaca\Documents\Fermio\portman\TradeCapture\bin\Debug\netstandard2.0\TradeCapture.pdb
+D:\Users\alex.cdebaca\Documents\Fermio\portman\TradeCapture\obj\Debug\netstandard2.0\TradeCapture.csproj.CoreCompileInputs.cache
+D:\Users\alex.cdebaca\Documents\Fermio\portman\TradeCapture\obj\Debug\netstandard2.0\TradeCapture.AssemblyInfoInputs.cache
+D:\Users\alex.cdebaca\Documents\Fermio\portman\TradeCapture\obj\Debug\netstandard2.0\TradeCapture.AssemblyInfo.cs
+D:\Users\alex.cdebaca\Documents\Fermio\portman\TradeCapture\obj\Debug\netstandard2.0\TradeCapture.dll
+D:\Users\alex.cdebaca\Documents\Fermio\portman\TradeCapture\obj\Debug\netstandard2.0\TradeCapture.pdb
