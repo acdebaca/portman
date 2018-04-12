@@ -1,6 +1,6 @@
 namespace TradeCapture
 {
-    enum Currency {
+    public enum Currency {
         CHF,
         CNY,
         EUR,
