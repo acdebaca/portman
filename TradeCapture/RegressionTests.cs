@@ -1,9 +1,12 @@
 using System;
 using NUnit.Framework;
+using ImpromptuInterface;
+using Dynamitey;
 
 namespace TradeCapture
 {
     [TestFixture]
+    //[SetUpFixture]
     class RegressionTests
     {
         [Test]
@@ -55,12 +58,34 @@ namespace TradeCapture
         }
 
         [Test]
-        public void Test_Throw_If()
+        public void Test_ThrowIf()
         {
             Assert.That(() => Util.ThrowIf<InvalidOperationException>(false, "Error #{0}", 42), Throws.InvalidOperationException);
             Assert.That(() => Util.ThrowIf<ArgumentNullException>(false, "Error #{0}", 42), Throws.ArgumentNullException);
             Assert.That(() => Util.ThrowIf<ArgumentException>(false, "Error #{0}", 42), Throws.ArgumentException);
             Assert.That(() => Util.ThrowIf<ArgumentOutOfRangeException>(false, "Error #{0}", 42), Throws.TypeOf(typeof(ArgumentOutOfRangeException)));
+        }
+
+        private static Fund fund;
+        private static Portfolio highYield;
+        private static Portfolio highGrade;
+        private static Desk usTreasuryDesk;
+        private static Desk ukDistressedDesk;
+
+        [OneTimeSetUp]
+        public void OneTimeSetup()
+        {
+            fund = new Fund("HedgeFund01");
+            highYield = new Portfolio("HighYield", fund);
+            highGrade = new Portfolio("HighGrade", fund);
+            usTreasuryDesk = new Desk("US Treasury Sales at BigBank");
+            ukDistressedDesk = new Desk("UK Distressed Debt Sales at Her Majesty's Bank");
+        }
+
+        [Test]
+        public void Test_Create_Entity()
+        {
+            Console.WriteLine(fund.Name);
         }
     }
 }

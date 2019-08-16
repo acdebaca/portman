@@ -15,5 +15,6 @@ namespace TradeCapture
     public interface IEntity
     {
         IEntity Parent { get; }
+        string Name { get; }
     }
 }
